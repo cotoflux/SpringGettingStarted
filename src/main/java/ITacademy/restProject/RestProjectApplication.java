@@ -12,10 +12,16 @@ public class RestProjectApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestProjectApplication.class, args);
+		
 	}
 	
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "WORLD") String name) {
-	return String.format("HELLO %s!", name);
+	
+		String name1 = "Nuria";
+		return String.format("HELLO %s!", name1);
 	}
+	
+	
+	
 }
