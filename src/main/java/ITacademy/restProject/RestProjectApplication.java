@@ -17,9 +17,8 @@ public class RestProjectApplication {
 	
 	@GetMapping("/hello")
 	public String hello(@RequestParam(value = "name", defaultValue = "WORLD") String name) {
-	
-		String name1 = "Nuria";
-		return String.format("HELLO %s!", name1);
+
+		return String.format("HELLO %s!", name);
 	}
 	
 	
